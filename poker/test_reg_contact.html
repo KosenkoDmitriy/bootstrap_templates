@@ -1,0 +1,84 @@
+<div class="container ng-scope" id="registration-contact">
+    <!-- ngInclude: undefined --><ng-include src="'registration/steps.html'" class="ng-scope"><div class="row ng-scope" id="progress-bar">
+    <!-- ngRepeat: step in steps --><div class="small-12 medium-2 columns item ng-scope ng-binding show-for-medium-up" ng-class="{active: (currentStep() == step),'show-for-medium-up': (currentStep() != step)}" ng-repeat="step in steps">
+    1. details
+</div><!-- end ngRepeat: step in steps --><div class="small-12 medium-2 columns item ng-scope ng-binding active" ng-class="{active: (currentStep() == step),'show-for-medium-up': (currentStep() != step)}" ng-repeat="step in steps">
+    2. contact
+</div><!-- end ngRepeat: step in steps --><div class="small-12 medium-2 columns item ng-scope ng-binding show-for-medium-up" ng-class="{active: (currentStep() == step),'show-for-medium-up': (currentStep() != step)}" ng-repeat="step in steps">
+    3. type
+</div><!-- end ngRepeat: step in steps --><div class="small-12 medium-2 columns item ng-scope ng-binding show-for-medium-up" ng-class="{active: (currentStep() == step),'show-for-medium-up': (currentStep() != step)}" ng-repeat="step in steps">
+    4. about
+</div><!-- end ngRepeat: step in steps --><div class="small-12 medium-2 columns item ng-scope ng-binding show-for-medium-up" ng-class="{active: (currentStep() == step),'show-for-medium-up': (currentStep() != step)}" ng-repeat="step in steps">
+    5. images
+</div><!-- end ngRepeat: step in steps --><div class="small-12 medium-2 columns item ng-scope ng-binding show-for-medium-up" ng-class="{active: (currentStep() == step),'show-for-medium-up': (currentStep() != step)}" ng-repeat="step in steps">
+    6. social
+</div><!-- end ngRepeat: step in steps -->
+</div></ng-include>
+    <div class="row">
+        <div class="small-12 columns">
+            <header>
+                <h2>Greetings!</h2>
+                <h5 class="ng-binding">
+                    Who is responsible for managing ofn5@ofn.ru?
+                </h5>
+            </header>
+        </div>
+    </div>
+    <form name="contact" ng-controller="RegistrationFormCtrl" ng-submit="selectIfValid('type',contact)" novalidate="" class="ng-scope ng-dirty ng-valid ng-valid-required">
+        <div class="row content">
+            <div class="small-12 medium-12 large-7 columns">
+                <div class="row">
+                    <div class="small-12 columns field">
+                        <label for="enterprise_contact">Primary Contact:</label>
+                        <input class="chunky small-12 columns ng-dirty ng-valid ng-valid-required" id="enterprise_contact" name="contact" ng-model="enterprise.contact" placeholder="Contact Name" required="">
+            <span class="error small-12 columns ng-hide" ng-show="contact.contact.$error.required &amp;&amp; submitted">
+              You need to enter a primary contact.
+            </span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="small-12 columns field">
+                        <label for="enterprise_email">Email address:</label>
+                        <input class="chunky small-12 columns ng-pristine ng-valid-email ng-valid ng-valid-required" id="enterprise_email" name="email" ng-model="enterprise.email" placeholder="eg. charlie@thefarm.com" required="" type="email">
+            <span class="error small-12 columns ng-hide" ng-show="(contact.email.$error.email || contact.email.$error.required) &amp;&amp; submitted">
+              You need to enter valid email address.
+            </span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="small-12 columns field">
+                        <label for="enterprise_phone">Phone number:</label>
+                        <input class="chunky small-12 columns ng-valid ng-dirty" id="enterprise_phone" name="phone" ng-model="enterprise.phone" placeholder="eg. (03) 1234 5678">
+                    </div>
+                </div>
+            </div>
+            <div class="small-12 medium-12 large-5 hide-for-small-only">
+                <div class="row">
+                    <div class="small-12 columns field">
+                        <label for="enterprise_origin_code">Origin Code:</label>
+                        <input class="chunky small-12 columns ng-valid ng-dirty" id="enterprise_origin_code" name="origin_code" ng-model="enterprise.origin_code" placeholder="eg. 0123456789">
+                    </div>
+                </div>
+                <!-- %h6 -->
+                <!-- Contact display -->
+                <!-- %i.ofn-i_013-help.has-tip{ 'data-tooltip' => true, title: "Choose how you want to display your contact details on the Open Food Network."} -->
+                <!-- .row -->
+                <!-- .small-12.columns -->
+                <!-- %label.indent-checkbox -->
+                <!-- %input{ type: 'checkbox', id: 'contact_name_profile', ng: { model: 'enterprise.name_in_profile' } } &nbsp; Display name in profile -->
+                <!-- .small-12.columns -->
+                <!-- %label.indent-checkbox -->
+                <!-- %input{ type: 'checkbox', id: 'contact_email_profile', ng: { model: 'enterprise.email_in_profile' } } &nbsp; Display email in profile -->
+                <!-- .small-12.columns -->
+                <!-- %label.indent-checkbox -->
+                <!-- %input{ type: 'checkbox', id: 'contact_phone_profile', ng: { model: 'enterprise.phone_in_profile' } } &nbsp; Display phone in profile -->
+            </div>
+        </div>
+        <div class="row buttons">
+            <div class="small-12 columns">
+                <input class="button secondary" ng-click="select('details')" type="button" value="Back">
+                <input class="button primary right" type="submit" value="Continue">
+            </div>
+        </div>
+    </form>
+</div>

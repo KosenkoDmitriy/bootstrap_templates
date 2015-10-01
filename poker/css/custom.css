@@ -1,0 +1,33 @@
+body{
+    background-color: palegoldenrod;
+    /*background-image: url("../images/bg1.jpg"), url('../images/bg2.jpg');*/
+    /*background-image: url('../images/bg7.jpg');*/
+    /*background-image: url('../images/bg10.png'),url('../images/bg_gold.png');*/
+    background-image: url('../images/bg17.jpg');
+
+    background-position: right bottom, left top;
+    /*background-repeat: no-repeat, repeat;;*/
+}
+
+.footer {
+    background-color:black;
+}
+
+.nav {
+    background-color:#e60f00;
+}
+
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+    color: #fff;
+    background-color: orangered;
+}
+
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+    color: #fff;
+    background-color: darkred;
+}
+
+.nav a {
+    color: papayawhip;
+    text-decoration: none;
+}
