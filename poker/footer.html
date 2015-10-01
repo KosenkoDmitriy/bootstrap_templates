@@ -18,18 +18,50 @@
 </head>
 
 <body>
-<div class="container">
-    <img src="./images/logo.png">
-    <ul class="nav nav-pills nav-justified" alt="poker logo">
-        <li class="active"><a href="./menu_files/menu.html">Home</a></li>
-        <li><a href="./menu_files/menu.html">Games</a></li>
-        <li><a href="./menu_files/menu.html">Credits</a></li>
-        <li><a href="./menu_files/menu.html">Downloads</a></li>
-        <li><a href="./menu_files/menu.html">About</a></li>
-        <li><a href="./menu_files/menu.html">Contact</a></li>
-    </ul>
-</div>
 <style type="text/css">
+    .container-narrow {
+        max-width: 730px;
+    }
+
+    body {
+        background-color: palegoldenrod;
+        /*background-image: url("../images/bg1.jpg"), url('../images/bg2.jpg');*/
+        /*background-image: url('../images/bg7.jpg');*/
+        /*background-image: url('../images/bg10.png'),url('../images/bg_gold.png');*/
+        background-image: url('./images/bg17.jpg');
+
+        background-position: right bottom, left top;
+        /*background-repeat: no-repeat, repeat;;*/
+    }
+
+    /*.footer {*/
+    /*background-color: black;*/
+    /*}*/
+
+    .nav {
+        background-color: #e60f00;
+    }
+
+    .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+        color: #fff;
+        background-color: orangered;
+    }
+
+    .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+        color: #fff;
+        background-color: darkred;
+    }
+
+    .nav-pills > li > a:hover, .nav-pills > li > a:focus {
+        color: #fff;
+        background-color: darkred;
+    }
+
+    .nav a {
+        color: papayawhip;
+        text-decoration: none;
+    }
+
     .footer {
         background-color: black;
     }
@@ -72,7 +104,6 @@
         right: -52px;
         position: absolute;
         top: 2px;
-
     }
 
     .ribbon span {
@@ -90,35 +121,78 @@
         height: 100px;
     }
 
+    .bg-black {
+        background: black;
+        height: 100px;
+        color: whitesmoke;
+    }
+
+    .ribbon-menu img {
+        position: absolute;
+        height: 100px;
+    }
+
+    .ribbon-menu img.right {
+        margin: 129px 0 0 698px;
+    }
+
+    .ribbon-menu img.left {
+        margin: 129px 0 0 -155px;
+    }
+
+    .dark {
+        color: palegoldenrod;
+        background-color: black;
+    }
 </style>
+<div class="container container-narrow">
+    <div class="header">
+        <div class="ribbon-menu">
+            <img src="./images/ribbon_red_r.png" class="right">
+            <img src="./images/ribbon_red_l.png" class="left">
+        </div>
+        <div class="masthead  text-center">
+            <img src="./images/logo.png" height="30%" align="">
 
-<div class="footer">
-    <div class="container-fluid bg-gold">
-        <div class="row">
-            <div class="col-md-12">
-                <h1>Game</h1>
-
-                <p>Play now</p>
-
-                <p>Play now</p>
-
-                <p>Play now</p>
-
-                <p>Play now</p>
-
-                <p>Play now</p>
-
-                <p>Play now</p>
-            </div>
+            <ul class="nav nav-pills nav-justified" alt="poker logo">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Games</a></li>
+                <li><a href="#">Credits</a></li>
+                <li><a href="#">Downloads</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
         </div>
     </div>
-    <!--<div class="container-fluid bg-success">-->
-    <!--<div class="row">-->
-    <!--<div class="col-md-12">-->
-    <!--<h1>Game</h1>-->
-    <!--</div>-->
-    <!--</div>-->
-    <!--</div>-->
+    <div class="row">
+        <div class="col-md-8">
+            <h1 class="text-center dark">Game</h1>
+
+            <img src="./images/game_play_now.png" class="img-responsive"/>
+            <br/>
+            <img src="./images/button_red.png" class="img-responsive"/>
+            <br/>
+
+            <p><b>Play now Play now </b>Play now Play now Play now Play now Play now Play now Play now Play now Play now
+                Play now Play now Play now Play now Play now </p>
+
+        </div>
+        <div class="col-md-4">
+            <br/>
+            <img src="./images/banner_live_casino.png" class="img-responsive"/>
+            <br/>
+            <img src="./images/banner_popular_games.png" class="img-responsive"/>
+            <br/>
+            <img src="./images/banner_jackpot.png" class="img-responsive"/>
+        </div>
+    </div>
+</div>
+<style type="text/css">
+
+</style>
+
+
+<div class="footer">
 
     <div class="container-fluid bg-red">
         <div class="ribbon1">
@@ -135,24 +209,24 @@
     </div>
 
 
-    <div class="container with-ribbon">
+    <div class="container with-ribbon bg-black">
         <div class="ribbon">
             <span>Get in Touch</span><br/>
             <img src="./images/logo.png" width="120px"/>
         </div>
         <div class="row">
             <div class="col-md-12">
-                <p>Content Here</p>
+                <!--<p>Content Here</p>-->
 
-                <p>Content Here</p>
+                <!--<p>Content Here</p>-->
 
-                <p>Content Here</p>
+                <!--<p>Content Here</p>-->
             </div>
         </div>
     </div>
 </div>
 
-
+<!--
 <style type="text/css">
     body {
         background: #2EB5E5;
@@ -299,5 +373,6 @@
         <div class="ray ray10"></div>
     </div>
 </div>
+-->
 </body>
 </html>
