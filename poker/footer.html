@@ -67,18 +67,19 @@
     }
 
     .ribbon1 {
-        background: #2e6da4;
+        background: green;
         position: absolute;
-        margin: -70px 0px 0 133px;
+        margin: 0px 0px 0 256px;
         padding: 10px 20px 6px 20px;
-        height: 200px;
-        width: 150px;
+        min-height: 280px;
+        min-width: 250px;
+        color: #FFF;
     }
 
     .ribbon1 img {
         margin: -29px 0 0 -10px;
-        width: 130px;
-        height: 130px;
+        min-width: 130px;
+        min-height: 180px;
     }
 
     .container.with-ribbon {
@@ -87,29 +88,29 @@
     }
 
     .ribbon {
-        background: #0088cc;
+        background: seagreen;
         position: absolute;
-        margin: -65px 0 0 22px;
+        margin: 85px 0px 0 159px;
         padding: 10px 20px 6px 20px;
-        height: 100px;
+        min-height: 100px;
     }
 
     .ribbon:before {
-        border-left: 52px solid #0066aa;
+        border-left: 52px solid darkgreen;
         border-top: 43px solid transparent;
         content: "";
         display: block;
-        height: 43px;
-        width: 7px;
+        min-height: 43px;
+        min-width: 7px;
         right: -52px;
         position: absolute;
         top: 2px;
     }
 
-    .ribbon span {
+    .ribbon1 span, .ribbon span {
         color: #FFF;
-        font-size: 1.6em;
-        font-family: "Shadows Into Light", cursive;
+        font-size: 1.3em;
+        /*font-family: "Shadows Into Light", cursive;*/
     }
 
     .bg-gold {
@@ -118,12 +119,12 @@
 
     .bg-red {
         background: darkred;
-        height: 100px;
+        min-height: 100px;
     }
 
     .bg-black {
         background: black;
-        height: 100px;
+        min-height: 100px;
         color: whitesmoke;
     }
 
@@ -143,6 +144,15 @@
     .dark {
         color: palegoldenrod;
         background-color: black;
+    }
+
+    ul.footer-nav-menu {
+        color: gray;
+        list-style-type: none;
+    }
+
+    ul.footer-nav-menu a {
+        color: gray;
     }
 </style>
 <div class="container container-narrow">
@@ -183,7 +193,7 @@
             <br/>
             <img src="./images/banner_popular_games.png" class="img-responsive"/>
             <br/>
-            <img src="./images/banner_jackpot.png" class="img-responsive"/>
+            <!--<img src="./images/banner_jackpot.png" class="img-responsive"/>-->
         </div>
     </div>
 </div>
@@ -195,184 +205,44 @@
 <div class="footer">
 
     <div class="container-fluid bg-red">
-        <div class="ribbon1">
-            <img src="./images/wheel_of_fortuna.png"/>
-            <span>Get in Touch 1
+        <div class="ribbon1 text-center">
+            <img src="./images/wheel_of_fortuna.png" class=""/><br/>
+            <span>Cash, Credits and <br/>Free Spins!
             </span>
         </div>
         <div class="row">
-            <div class="col-md-12">
-                <!--<h1>footer</h1>-->
-
+            <div class="col-md-offset-5 col-md-12">
+                <h3 style="color:white">Start Playing - win 100% welcome bonus</h3>
+                <ul>
+                    <li></li>
+                </ul>
             </div>
         </div>
     </div>
-
 
     <div class="container with-ribbon bg-black">
-        <div class="ribbon">
-            <span>Get in Touch</span><br/>
-            <img src="./images/logo.png" width="120px"/>
+        <div class="ribbon text-center">
+            <img class="" src="./images/logo.png" width="200px"/><br/>
+            <span>All Rights Reserved 2015 </span><br/>
         </div>
         <div class="row">
-            <div class="col-md-12">
-                <!--<p>Content Here</p>-->
-
-                <!--<p>Content Here</p>-->
-
-                <!--<p>Content Here</p>-->
+            <!--<div class="col-md-12">-->
+            <!--</div>-->
+            <div class="col-md-offset-5 col-md-12">
+                <ul class="footer-nav-menu" alt="poker logo">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">Games</a></li>
+                    <li><a href="#">Credits</a></li>
+                    <li><a href="#">Downloads</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
             </div>
         </div>
     </div>
-</div>
+    <div class="container with-ribbon bg-black">
 
-<!--
-<style type="text/css">
-    body {
-        background: #2EB5E5;
-    }
-
-    .sun {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        margin: auto;
-        width: 70px;
-        height: 70px;
-        border-radius: 50%;
-        /*background:palegoldenrod;*/
-        opacity: 0.9;
-        box-shadow: 0px 0px 40px 15px white;
-    }
-
-    .ray_box {
-        position: absolute;
-        margin: auto;
-        top: 0px;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        width: 70px;
-        -webkit-animation: ray_anim 120s linear infinite;
-        animation: ray_anim 120s linear infinite;
-    }
-
-    .ray {
-        background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0) 100%);
-        background: linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0) 100%);
-        margin-left: 10px;
-        border-radius: 80% 80% 0 0;
-        position: absolute;
-        opacity: 0.1;
-    }
-
-    .ray1 {
-        height: 170px;
-        width: 30px;
-        -webkit-transform: rotate(180deg);
-        top: -175px;
-        left: 15px;
-    }
-
-    .ray2 {
-        height: 100px;
-        width: 8px;
-        -webkit-transform: rotate(220deg);
-        top: -90px;
-        left: 75px;
-    }
-
-    .ray3 {
-        height: 170px;
-        width: 50px;
-        -webkit-transform: rotate(250deg);
-        top: -80px;
-        left: 100px;
-    }
-
-    .ray4 {
-        height: 120px;
-        width: 14px;
-        -webkit-transform: rotate(305deg);
-        top: 30px;
-        left: 100px;
-    }
-
-    .ray5 {
-        height: 140px;
-        width: 30px;
-        -webkit-transform: rotate(-15deg);
-        top: 60px;
-        left: 40px;
-    }
-
-    .ray6 {
-        height: 90px;
-        width: 50px;
-        -webkit-transform: rotate(30deg);
-        top: 60px;
-        left: -40px;
-    }
-
-    .ray7 {
-        height: 180px;
-        width: 10px;
-        -webkit-transform: rotate(70deg);
-        top: -35px;
-        left: -40px;
-    }
-
-    .ray8 {
-        height: 120px;
-        width: 30px;
-        -webkit-transform: rotate(100deg);
-        top: -45px;
-        left: -90px;
-    }
-
-    .ray9 {
-        height: 80px;
-        width: 10px;
-        -webkit-transform: rotate(120deg);
-        top: -65px;
-        left: -60px;
-    }
-
-    .ray10 {
-        height: 190px;
-        width: 23px;
-        -webkit-transform: rotate(150deg);
-        top: -185px;
-        left: -60px;
-    }
-
-    @-webkit-keyframes ray_anim {
-        0% {
-            -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-        }
-        100% {
-            -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-        }
-    }
-</style>
-<div class="sun">
-    <div class="ray_box">
-        <div class="ray ray1"></div>
-        <div class="ray ray2"></div>
-        <div class="ray ray3"></div>
-        <div class="ray ray4"></div>
-        <div class="ray ray5"></div>
-        <div class="ray ray6"></div>
-        <div class="ray ray7"></div>
-        <div class="ray ray8"></div>
-        <div class="ray ray9"></div>
-        <div class="ray ray10"></div>
     </div>
-</div>
--->
+
 </body>
 </html>
