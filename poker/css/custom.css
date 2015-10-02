@@ -17,21 +17,41 @@ body{
     background-color:#e60f00;
 }
 
+ul.nav-pills {
+    height: 40px;
+    margin:0;
+    padding:0;
+}
+
+.navbar-collapse {
+height: 40px;
+    padding: 0;
+    margin:0;
+}
+
+.navbar-brand {
+    padding:0;
+}
+
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus,
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus,
 .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
     color: #fff;
     background-color: orangered;
 }
 
-.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
-    color: #fff;
-    background-color: darkred;
-}
 
 .nav a {
     color: papayawhip;
     text-decoration: none;
 }
 
+
+.navbar-header, .navbar, .navbar-default {
+    /*background: inherit;*/
+    background-color: darkred;
+    border:0px;
+}
 
 .container-narrow {
     max-width: 730px;
