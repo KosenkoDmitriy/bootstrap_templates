@@ -152,16 +152,16 @@ height: 40px;
 
 .ribbon-menu img {
     position: absolute;
-    height: 100px;
-    margin-top: 273px;
+    height: 125px;
+    margin-top: 263px;
 }
 
 .ribbon-menu img.right {
-    margin-left: 350px;
+    margin-left: 345px;
 }
 
 .ribbon-menu img.left {
-    margin-left: -505px;
+    margin-left: -540px;
 }
 
 .dark {
