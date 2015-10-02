@@ -21,14 +21,16 @@ body {
 
 .ray_box {
     position: absolute;
+    /*margin: 10% 0% 50% 50%;*/
+    /*top: -20%;*/
     margin: auto;
-    top: -100px;
+    top: -300px;
     left: 0;
     right: 0;
     bottom: 0;
     width: 100px;
-    -webkit-animation: ray_anim 10s linear infinite;
-    animation: ray_anim 10s linear infinite;
+    -webkit-animation: ray_anim 20s linear infinite;
+    animation: ray_anim 20s linear infinite;
 }
 
 .ray {
