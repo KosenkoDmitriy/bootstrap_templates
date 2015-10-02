@@ -1,0 +1,310 @@
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="http://bootstrap-3.ru/assets/ico/favicon.ico">
+
+    <title>Narrow Jumbotron Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./css/bootstrap.css" rel="stylesheet">
+
+    <script src="./js/jquery.min.js"></script>
+
+</head>
+
+<body>
+<style type="text/css">
+    .container-narrow {
+        max-width: 730px;
+    }
+
+    body {
+        background-color: palegoldenrod;
+        /*background-image: url("../images/bg1.jpg"), url('../images/bg2.jpg');*/
+        /*background-image: url('../images/bg7.jpg');*/
+        /*background-image: url('../images/bg10.png'),url('../images/bg_gold.png');*/
+        background-image: url('./images/bg17.jpg');
+
+        background-position: right bottom, left top;
+        /*background-repeat: no-repeat, repeat;;*/
+    }
+
+    /*.footer {*/
+    /*background-color: black;*/
+    /*}*/
+
+    .nav {
+        background-color: #e60f00;
+    }
+
+    .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+        color: #fff;
+        background-color: orangered;
+    }
+
+    .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+        color: #fff;
+        background-color: darkred;
+    }
+
+    .nav-pills > li > a:hover, .nav-pills > li > a:focus {
+        color: #fff;
+        background-color: darkred;
+    }
+
+    .nav a {
+        color: papayawhip;
+        text-decoration: none;
+    }
+
+    .footer {
+        background-color: black;
+    }
+
+    .ribbon1 {
+        background: green;
+        position: absolute;
+        margin: 0px 0px 0 256px;
+        padding: 10px 20px 6px 20px;
+        min-height: 280px;
+        min-width: 250px;
+        color: #FFF;
+    }
+
+    .ribbon1 img {
+        margin: -29px 0 0 -10px;
+        min-width: 130px;
+        min-height: 180px;
+    }
+
+    .container.with-ribbon {
+        padding-top: 50px;
+        /*background: #F4F4F4;*/
+    }
+
+    .ribbon {
+        background: seagreen;
+        position: absolute;
+        margin: 85px 0px 0 159px;
+        padding: 10px 20px 6px 20px;
+        min-height: 100px;
+    }
+
+    .ribbon:before {
+        border-left: 52px solid darkgreen;
+        border-top: 43px solid transparent;
+        content: "";
+        display: block;
+        min-height: 43px;
+        min-width: 7px;
+        right: -52px;
+        position: absolute;
+        top: 2px;
+    }
+
+    .ribbon1 span, .ribbon span {
+        color: #FFF;
+        font-size: 1.3em;
+        /*font-family: "Shadows Into Light", cursive;*/
+    }
+
+    .bg-gold {
+        background-image: url("./images/bg_gold.png");
+    }
+
+    .bg-red {
+        background: darkred;
+        min-height: 100px;
+    }
+
+    .bg-black {
+        background: black;
+        min-height: 100px;
+        color: whitesmoke;
+    }
+
+    .ribbon-menu img {
+        position: absolute;
+        height: 100px;
+    }
+
+    .ribbon-menu img.right {
+        margin: 274px 0 0 698px;
+    }
+
+    .ribbon-menu img.left {
+        margin: 274px 0 0 -155px;
+    }
+
+    .dark {
+        color: palegoldenrod;
+        background-color: black;
+    }
+
+    ul.footer-nav-menu {
+        color: gray;
+        list-style-type: none;
+    }
+
+    ul.footer-nav-menu a {
+        color: gray;
+    }
+</style>
+
+<!--<nav class="navbar navbar-default">-->
+    <!--<div class="container-fluid">-->
+        <!--&lt;!&ndash; Brand and toggle get grouped for better mobile display &ndash;&gt;-->
+        <!--<div class="navbar-header">-->
+            <!--<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">-->
+                <!--<span class="sr-only">Toggle navigation</span>-->
+                <!--<span class="icon-bar"></span>-->
+                <!--<span class="icon-bar"></span>-->
+                <!--<span class="icon-bar"></span>-->
+            <!--</button>-->
+            <!--<a class="navbar-brand" href="#">Brand</a>-->
+        <!--</div>-->
+
+        <!--&lt;!&ndash; Collect the nav links, forms, and other content for toggling &ndash;&gt;-->
+        <!--<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">-->
+            <!--<ul class="nav navbar-nav">-->
+                <!--<li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>-->
+                <!--<li><a href="#">Link</a></li>-->
+                <!--<li class="dropdown">-->
+                    <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>-->
+                    <!--<ul class="dropdown-menu">-->
+                        <!--<li><a href="#">Action</a></li>-->
+                        <!--<li><a href="#">Another action</a></li>-->
+                        <!--<li><a href="#">Something else here</a></li>-->
+                        <!--<li role="separator" class="divider"></li>-->
+                        <!--<li><a href="#">Separated link</a></li>-->
+                        <!--<li role="separator" class="divider"></li>-->
+                        <!--<li><a href="#">One more separated link</a></li>-->
+                    <!--</ul>-->
+                <!--</li>-->
+            <!--</ul>-->
+            <!--<form class="navbar-form navbar-left" role="search">-->
+                <!--<div class="form-group">-->
+                    <!--<input type="text" class="form-control" placeholder="Search">-->
+                <!--</div>-->
+                <!--<button type="submit" class="btn btn-default">Submit</button>-->
+            <!--</form>-->
+            <!--<ul class="nav navbar-nav navbar-right">-->
+                <!--<li><a href="#">Link</a></li>-->
+                <!--<li class="dropdown">-->
+                    <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>-->
+                    <!--<ul class="dropdown-menu">-->
+                        <!--<li><a href="#">Action</a></li>-->
+                        <!--<li><a href="#">Another action</a></li>-->
+                        <!--<li><a href="#">Something else here</a></li>-->
+                        <!--<li role="separator" class="divider"></li>-->
+                        <!--<li><a href="#">Separated link</a></li>-->
+                    <!--</ul>-->
+                <!--</li>-->
+            <!--</ul>-->
+        <!--</div>&lt;!&ndash; /.navbar-collapse &ndash;&gt;-->
+    <!--</div>&lt;!&ndash; /.container-fluid &ndash;&gt;-->
+<!--</nav>-->
+<div class="container container-narrow">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <div class="header">
+                <div class="ribbon-menu">
+                    <img src="./images/ribbon_red_r.png" class="right">
+                    <img src="./images/ribbon_red_l.png" class="left">
+                </div>
+                <div class="masthead  text-center">
+
+                    <img src="./images/logo.png" class="img-responsive" height="" align="">
+
+                    <ul class="nav nav-pills nav-justified" alt="poker logo">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#">Games</a></li>
+                        <li><a href="#">Credits</a></li>
+                        <li><a href="#">Downloads</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-8 text-center">
+            <h1 class="text-center dark">Game</h1>
+
+            <img src="./images/game_play_now.png" class="img-responsive col-xs-12" />
+            <br/>
+            <!--<img src="./images/game_play_now.png" class="img-responsive"/>-->
+            <br/>
+            <!--<img src="./images/button_red.png" class="img-responsive"/>-->
+            <img src="./images/button_red.png" class="img-responsive col-xs-12" width=""/>
+            <br/>
+
+            <p><b>Play now Play now </b>Play now Play now Play now Play now Play now Play now Play now Play now Play now
+                Play now Play now Play now Play now Play now </p>
+
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-4">
+            <br/>
+            <img src="./images/banner_live_casino.png" class="img-responsive col-xs-12"/>
+            <br/>
+            <img src="./images/banner_popular_games.png" class="img-responsive col-xs-12"/>
+            <br/>
+            <!--<img src="./images/banner_jackpot.png" class="img-responsive"/>-->
+        </div>
+    </div>
+</div>
+<style type="text/css">
+
+</style>
+
+
+<div class="footer">
+
+    <div class="container-fluid bg-red">
+        <div class="ribbon1 text-center">
+            <img src="./images/wheel_of_fortuna.png" class=""/><br/>
+            <span>Cash, Credits and <br/>Free Spins!
+            </span>
+        </div>
+        <div class="row">
+            <div class="col-md-offset-5 col-md-12">
+                <h3 style="color:white">Start Playing - win 100% welcome bonus</h3>
+                <ul>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container with-ribbon bg-black">
+        <div class="ribbon text-center">
+            <img class="" src="./images/logo.png" width="200px"/><br/>
+            <span>All Rights Reserved 2015 </span><br/>
+        </div>
+        <div class="row">
+            <!--<div class="col-md-12">-->
+            <!--</div>-->
+            <div class="col-md-offset-5 col-md-12">
+                <ul class="footer-nav-menu" alt="poker logo">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">Games</a></li>
+                    <li><a href="#">Credits</a></li>
+                    <li><a href="#">Downloads</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container with-ribbon bg-black">
+
+    </div>
+
+</body>
+</html>

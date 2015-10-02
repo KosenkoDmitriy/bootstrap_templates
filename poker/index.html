@@ -1,242 +1,61 @@
+<!DOCTYPE html>
+<!-- saved from url=(0038)http://getbootstrap.com/examples/blog/ -->
 <html lang="en">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="shortcut icon" href="http://bootstrap-3.ru/assets/ico/favicon.ico">
+    <!--<link rel="icon" href="http://getbootstrap.com/favicon.ico">-->
 
-    <title>Narrow Jumbotron Template for Bootstrap</title>
+    <title>Blog Template for Bootstrap</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="./css/bootstrap.css" rel="stylesheet">
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
 
-    <script src="./js/jquery.min.js"></script>
+    <!-- Custom styles for this template -->
+    <link href="./css/custom.css" rel="stylesheet">
 
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]>
+    <script src="./js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="./js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
+<style type="text/css">embed[type*="application/x-shockwave-flash"], embed[src*=".swf"], object[type*="application/x-shockwave-flash"], object[codetype*="application/x-shockwave-flash"], object[src*=".swf"], object[codebase*="swflash.cab"], object[classid*="D27CDB6E-AE6D-11cf-96B8-444553540000"], object[classid*="d27cdb6e-ae6d-11cf-96b8-444553540000"], object[classid*="D27CDB6E-AE6D-11cf-96B8-444553540000"] {
+    display: none !important;
+}</style>
 
 <body>
-<style type="text/css">
-    .container-narrow {
-        max-width: 730px;
-    }
 
-    body {
-        background-color: palegoldenrod;
-        /*background-image: url("../images/bg1.jpg"), url('../images/bg2.jpg');*/
-        /*background-image: url('../images/bg7.jpg');*/
-        /*background-image: url('../images/bg10.png'),url('../images/bg_gold.png');*/
-        background-image: url('./images/bg17.jpg');
+<div class="text-center">
+    <div class="container container-narrow">
+        <!--<nav class="blog-nav">-->
+        <!--<a class="blog-nav-item active" href="#">Home</a>-->
+        <!--<a class="blog-nav-item" href="#">New features</a>-->
+        <!--<a class="blog-nav-item" href="#">Press</a>-->
+        <!--<a class="blog-nav-item" href="#">New hires</a>-->
+        <!--<a class="blog-nav-item" href="#">About</a>-->
+        <!--</nav>-->
+        <div class="header">
 
-        background-position: right bottom, left top;
-        /*background-repeat: no-repeat, repeat;;*/
-    }
-
-    /*.footer {*/
-    /*background-color: black;*/
-    /*}*/
-
-    .nav {
-        background-color: #e60f00;
-    }
-
-    .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
-        color: #fff;
-        background-color: orangered;
-    }
-
-    .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
-        color: #fff;
-        background-color: darkred;
-    }
-
-    .nav-pills > li > a:hover, .nav-pills > li > a:focus {
-        color: #fff;
-        background-color: darkred;
-    }
-
-    .nav a {
-        color: papayawhip;
-        text-decoration: none;
-    }
-
-    .footer {
-        background-color: black;
-    }
-
-    .ribbon1 {
-        background: green;
-        position: absolute;
-        margin: 0px 0px 0 256px;
-        padding: 10px 20px 6px 20px;
-        min-height: 280px;
-        min-width: 250px;
-        color: #FFF;
-    }
-
-    .ribbon1 img {
-        margin: -29px 0 0 -10px;
-        min-width: 130px;
-        min-height: 180px;
-    }
-
-    .container.with-ribbon {
-        padding-top: 50px;
-        /*background: #F4F4F4;*/
-    }
-
-    .ribbon {
-        background: seagreen;
-        position: absolute;
-        margin: 85px 0px 0 159px;
-        padding: 10px 20px 6px 20px;
-        min-height: 100px;
-    }
-
-    .ribbon:before {
-        border-left: 52px solid darkgreen;
-        border-top: 43px solid transparent;
-        content: "";
-        display: block;
-        min-height: 43px;
-        min-width: 7px;
-        right: -52px;
-        position: absolute;
-        top: 2px;
-    }
-
-    .ribbon1 span, .ribbon span {
-        color: #FFF;
-        font-size: 1.3em;
-        /*font-family: "Shadows Into Light", cursive;*/
-    }
-
-    .bg-gold {
-        background-image: url("./images/bg_gold.png");
-    }
-
-    .bg-red {
-        background: darkred;
-        min-height: 100px;
-    }
-
-    .bg-black {
-        background: black;
-        min-height: 100px;
-        color: whitesmoke;
-    }
-
-    .ribbon-menu img {
-        position: absolute;
-        height: 100px;
-    }
-
-    .ribbon-menu img.right {
-        margin: 274px 0 0 698px;
-    }
-
-    .ribbon-menu img.left {
-        margin: 274px 0 0 -155px;
-    }
-
-    .dark {
-        color: palegoldenrod;
-        background-color: black;
-    }
-
-    ul.footer-nav-menu {
-        color: gray;
-        list-style-type: none;
-    }
-
-    ul.footer-nav-menu a {
-        color: gray;
-    }
-</style>
-<div class="container container-narrow">
-    <div class="row">
-        <div class="col-sm-12 col-md-12 col-lg-12">
-            <div class="header">
-                <div class="ribbon-menu">
-                    <img src="./images/ribbon_red_r.png" class="right">
-                    <img src="./images/ribbon_red_l.png" class="left">
-                </div>
-                <div class="masthead  text-center">
-                    <img src="./images/logo.png" height="" align="">
-
-                    <ul class="nav nav-pills nav-justified" alt="poker logo">
-                        <li class="active"><a href="#">Home</a></li>
-                        <li><a href="#">Games</a></li>
-                        <li><a href="#">Credits</a></li>
-                        <li><a href="#">Downloads</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </div>
+            <div class="ribbon-menu">
+                <img src="./images/ribbon_red_r.png" class="right">
+                <img src="./images/ribbon_red_l.png" class="left">
             </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-sm-12 col-md-8 text-center">
-            <h1 class="text-center dark">Game</h1>
+            <div class="masthead  text-center">
 
-            <img src="./images/game_play_now.png" width="100%" />
-            <br/>
-            <!--<img src="./images/game_play_now.png" class="img-responsive"/>-->
-            <br/>
-            <!--<img src="./images/button_red.png" class="img-responsive"/>-->
-            <img src="./images/button_red.png" class="" width="100%"/>
-            <br/>
+                <img src="./images/logo.png" class="img-responsive" height="" align="">
 
-            <p><b>Play now Play now </b>Play now Play now Play now Play now Play now Play now Play now Play now Play now
-                Play now Play now Play now Play now Play now </p>
-
-        </div>
-        <div class="col-sm-12 col-md-4">
-            <br/>
-            <img src="./images/banner_live_casino.png" class="img-responsive"/>
-            <br/>
-            <img src="./images/banner_popular_games.png" class="img-responsive"/>
-            <br/>
-            <!--<img src="./images/banner_jackpot.png" class="img-responsive"/>-->
-        </div>
-    </div>
-</div>
-<style type="text/css">
-
-</style>
-
-
-<div class="footer">
-
-    <div class="container-fluid bg-red">
-        <div class="ribbon1 text-center">
-            <img src="./images/wheel_of_fortuna.png" class=""/><br/>
-            <span>Cash, Credits and <br/>Free Spins!
-            </span>
-        </div>
-        <div class="row">
-            <div class="col-md-offset-5 col-md-12">
-                <h3 style="color:white">Start Playing - win 100% welcome bonus</h3>
-                <ul>
-                    <li></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    <div class="container with-ribbon bg-black">
-        <div class="ribbon text-center">
-            <img class="" src="./images/logo.png" width="200px"/><br/>
-            <span>All Rights Reserved 2015 </span><br/>
-        </div>
-        <div class="row">
-            <!--<div class="col-md-12">-->
-            <!--</div>-->
-            <div class="col-md-offset-5 col-md-12">
-                <ul class="footer-nav-menu" alt="poker logo">
+                <ul class="nav nav-pills nav-justified" alt="poker logo">
                     <li class="active"><a href="#">Home</a></li>
                     <li><a href="#">Games</a></li>
                     <li><a href="#">Credits</a></li>
@@ -247,9 +66,106 @@
             </div>
         </div>
     </div>
-    <div class="container with-ribbon bg-black">
+</div>
+
+<div class="container container-narrow">
+
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-8 text-center">
+            <h1 class="text-center dark">Game</h1>
+
+            <img src="./images/game_play_now.png" class="img-responsive col-xs-12"/>
+            <br/>
+            <!--<img src="./images/game_play_now.png" class="img-responsive"/>-->
+            <br/>
+            <!--<img src="./images/button_red.png" class="img-responsive"/>-->
+            <img src="./images/button_red.png" class="img-responsive col-xs-12" width=""/>
+            <br/>
+
+            <p><b>Play now Play now </b>Play now Play now Play now Play now Play now Play now Play now Play now Play now
+                Play now Play now Play now Play now Play now </p>
+
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-4">
+            <br/>
+            <img src="./images/banner_live_casino.png" class="img-responsive col-xs-12"/>
+            <br/>
+            <img src="./images/banner_popular_games.png" class="img-responsive col-xs-12"/>
+            <br/>
+            <!--<img src="./images/banner_jackpot.png" class="img-responsive"/>-->
+        </div>
 
     </div>
+
+
+</div>
+<!-- /.row -->
+
+</div>
+<!-- /.container -->
+
+
+<footer class="">
+    <div class="bg-red">
+        <div class="container container-narrow">
+            <div class="row">
+                <div class="col-xs-4">
+
+                    <div class="ribbon1 text-center">
+                        <img src="./images/wheel_of_fortuna.png" class=""/><br/>
+                        <span>Cash, Credits and <br/>Free Spins!</span>
+                    </div>
+                    <div class="ribbon text-center">
+                        <img class="" src="./images/logo.png" class="img-responsive col-xs-12" width="200px"/>
+                        <br/>
+                        <span>All Rights Reserved 2015 </span>
+                    </div>
+                </div>
+
+                <div class="col-xs-offset-1 col-xs-7">
+                    <h3 style="color:white">Start Playing - win 100% welcome bonus</h3>
+                    <ul>
+                        <!--<li>Texas Holdem</li>-->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="with-ribbon bg-black">
+        <div class="container container-narrow">
+            <div class="row">
+                <div class="col-xs-4">
+                </div>
+                <div class="col-xs-offset-1 col-xs-7">
+                    <p>Navigation Menu:</p>
+                    <a href="#">Games</a><br/>
+                    <a href="#">Home</a><br/>
+                    <a href="#">Credits</a><br/>
+                    <a href="#">Downloads</a><br/>
+                    <a href="#">About</a><br/>
+                    <a href="#">Contact</a><br/>
+                    <!--<ul class="footer-nav-menu" alt="poker logo">-->
+                        <!--<li class="active"><a href="#">Home</a></li>-->
+                        <!--<li><a href="#">Games</a></li>-->
+                        <!--<li><a href="#">Credits</a></li>-->
+                        <!--<li><a href="#">Downloads</a></li>-->
+                        <!--<li><a href="#">About</a></li>-->
+                        <!--<li><a href="#">Contact</a></li>-->
+                    <!--</ul>-->
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="./js/jquery.min.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="./js/ie10-viewport-bug-workaround.js"></script>
+
 
 </body>
 </html>

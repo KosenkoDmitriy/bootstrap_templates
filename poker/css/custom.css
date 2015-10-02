@@ -6,7 +6,7 @@ body{
     background-image: url('../images/bg17.jpg');
 
     background-position: right bottom, left top;
-    /*background-repeat: no-repeat, repeat;;*/
+
 }
 
 .footer {
@@ -30,4 +30,135 @@ body{
 .nav a {
     color: papayawhip;
     text-decoration: none;
+}
+
+
+.container-narrow {
+    max-width: 730px;
+}
+
+
+
+.nav {
+    background-color: #e60f00;
+}
+
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+    color: #fff;
+    background-color: orangered;
+}
+
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+    color: #fff;
+    background-color: darkred;
+}
+
+.nav-pills > li > a:hover, .nav-pills > li > a:focus {
+    color: #fff;
+    background-color: darkred;
+}
+
+.nav a {
+    color: papayawhip;
+    text-decoration: none;
+}
+
+.footer {
+    background-color: black;
+}
+
+.ribbon1 {
+    background: #379500;
+    position: absolute;
+    margin: 0px 0px 0 0px;
+    padding: 0px 20px 6px 30px;
+    min-height: 280px;
+    min-width: 250px;
+    color: #FFF;
+}
+
+.ribbon1 img {
+    margin: -29px 0 0 -10px;
+    min-width: 130px;
+    min-height: 180px;
+}
+
+.container.with-ribbon {
+    padding-top: 50px;
+    /*background: #F4F4F4;*/
+}
+
+.ribbon {
+    background: #008800;
+    position: absolute;
+    margin: 235px 0px 0 -50px;
+    padding: 10px 20px 6px 20px;
+    min-height: 100px;
+    min-width: 250px;
+}
+
+.ribbon:before {
+    border-left: 52px solid #003300;
+    border-top: 43px solid transparent;
+    content: "";
+    display: block;
+    min-height: 43px;
+    min-width: 7px;
+    right: -52px;
+    position: absolute;
+    top: 2px;
+}
+
+.ribbon1 span, .ribbon span {
+    color: #FFF;
+    font-size: 1.3em;
+    /*font-family: "Shadows Into Light", cursive;*/
+}
+
+.bg-gold {
+    background-image: url("./images/bg_gold.png");
+}
+
+.bg-red {
+    background: darkred;
+    min-height: 100px;
+}
+
+.bg-black {
+    background: black;
+    min-height: 100px;
+    color: whitesmoke;
+}
+
+.ribbon-menu img {
+    position: absolute;
+    height: 100px;
+    margin-top: 273px;
+}
+
+.ribbon-menu img.right {
+    margin-left: 350px;
+}
+
+.ribbon-menu img.left {
+    margin-left: -505px;
+}
+
+.dark {
+    color: palegoldenrod;
+    background-color: black;
+}
+
+ul.footer-nav-menu {
+    color: gray;
+    list-style-type: none;
+}
+
+
+footer .bg-black {
+    min-height:278px;
+}
+
+footer a, footer p {
+    color:gray;
 }
