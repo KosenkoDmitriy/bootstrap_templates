@@ -198,3 +198,8 @@ footer a, footer p {
 	height:auto;
 	width:50%;
 }
+
+.img-responsive {
+    padding-top:10px;
+    padding-bottom:10px;
+}
