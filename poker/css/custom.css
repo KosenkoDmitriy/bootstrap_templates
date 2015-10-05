@@ -161,9 +161,13 @@ ul.nav-pills {
 .bg-black {
     min-height: 100px;
     color: floralwhite;
-    background: -webkit-radial-gradient(at top, #400000, #004000, black);
     /*background: url(../images/bg_rays_2.png) no-repeat center top , radial-gradient(at top,ghostwhite,gold,orange);*/
-    background: radial-gradient(at top, #004000, #400000,black);
+
+    /*background: -webkit-radial-gradient(at top, #400000, #004000, black);*/
+    /*background: radial-gradient(at top, #004000, #400000,black);*/
+
+    background: -webkit-radial-gradient(at top, #414141, black);
+    background: radial-gradient(at top, #414141, black);
 }
 
 .ribbon-menu img {
