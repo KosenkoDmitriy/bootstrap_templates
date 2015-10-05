@@ -5,8 +5,17 @@ body{
     /*background-image: url('../images/bg10.png'),url('../images/bg_gold.png');*/
     /*background-image: url('../images/bg17.jpg');*/
 
-    background-image: url('../images/bg35.jpg');
-    background-position: right bottom, left top;
+    /*background-image: url('../images/bg35.jpg');*/
+    /*background-position: right bottom, left top;*/
+
+    background:#f9bf00 url(../images/bg_rays_2.png) no-repeat center top scroll;
+    background-size: 100% auto;
+    /*padding-bottom: 50%;*/
+
+
+    /*background: -webkit-radial-gradient(top,white);*/
+    /*background: url(../images/bg_rays_2.png) no-repeat center top , radial-gradient(at top,ghostwhite,gold,orange);*/
+
 }
 
 .footer {
@@ -186,6 +195,7 @@ footer .bg-black {
 footer a, footer p {
     color:gray;
 }
+
 .logo {
 	height:auto;
 	width:50%;
