@@ -1,27 +1,25 @@
-body{
-    background:#f9bf00 url(../images/bg_rays_2.png) no-repeat center top scroll;
+body {
+    background: #f9bf00 url(../images/bg_rays_2.png) no-repeat center top scroll;
     background-size: 100% auto;
     /*padding-bottom: 50%;*/
 }
 
-
 .footer {
-    background-color:black;
+    background-color: black;
 }
 
-
 ul.nav-pills {
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
 }
 
 .navbar-collapse {
     padding: 0;
-    margin:0;
+    margin: 0;
 }
 
 .navbar-brand {
-    padding:0;
+    padding: 0;
 }
 
 .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus,
@@ -32,23 +30,20 @@ ul.nav-pills {
     height: 50px;
 }
 
-
 .nav a {
     color: papayawhip;
     text-decoration: none;
 }
 
-
 .navbar-header, .navbar, .navbar-default {
     /*background: inherit;*/
     background-color: #aa0915;
-    border:0px;
+    border: 0px;
 }
 
 .container-narrow {
     max-width: 730px;
 }
-
 
 .nav {
     background-color: #d61920;
@@ -84,10 +79,10 @@ ul.nav-pills {
     margin: 0px 0px 0 0px;
     padding: 10px 20px 6px 20px;
     min-height: 280px;
-    ~min-width: 150px;
+~ min-width : 150 px;
     color: floralwhite;
 
-    background-image: -webkit-linear-gradient(top, #00D000 0%, #005800  100%);
+    background-image: -webkit-linear-gradient(top, #00D000 0%, #005800 100%);
     background-image: -o-linear-gradient(top, #00D000 0%, #005800 100%);
     background-image: linear-gradient(to bottom, #00D000 0%, #005800 100%);
     background-repeat: repeat-x;
@@ -95,16 +90,16 @@ ul.nav-pills {
     background-color: #379500;
 }
 
-.ribbon1 img,.ribbon img{
+.ribbon1 img, .ribbon img {
     margin-top: -35px;
-    ~min-width: 150px;
-	width: 150px;
-    ~min-height: 180px;
+~ min-width : 150 px;
+    width: 150px;
+~ min-height : 180 px;
 }
 
- .ribbon img{
-	margin-top: 0px;
- }
+.ribbon img {
+    margin-top: 0px;
+}
 
 .container.with-ribbon {
     padding-top: 50px;
@@ -117,7 +112,7 @@ ul.nav-pills {
     min-height: 100px;
     min-width: 190px;
 
-    background-image: -webkit-linear-gradient(top, #00D000 0%, #005800  100%);
+    background-image: -webkit-linear-gradient(top, #00D000 0%, #005800 100%);
     background-image: -o-linear-gradient(top, #00D000 0%, #005800 100%);
     background-image: linear-gradient(to bottom, #00D000 0%, #005800 100%);
     background-repeat: repeat-x;
@@ -187,7 +182,7 @@ ul.nav-pills {
 .dark {
     color: palegoldenrod;
     background-color: black;
-    margin:15px;
+    margin: 15px;
     padding: 5px;
     font-size: 1.2em;
 }
@@ -197,28 +192,26 @@ ul.footer-nav-menu {
     list-style-type: none;
 }
 
-
 footer .bg-black {
-    min-height:278px;
+    min-height: 278px;
 }
 
 footer h3, footer h4 {
     color: floralwhite;
 }
 
-
 footer a, footer p {
-    color:gray;
+    color: gray;
 }
 
 .logo {
-	height:auto;
-	width:50%;
+    height: auto;
+    width: 50%;
 }
 
 .img-responsive {
-    padding-top:10px;
-    padding-bottom:10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .nav-pills {
@@ -237,7 +230,6 @@ footer a, footer p {
     background-repeat: repeat-x;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff990000', endColorstr='#ff770000', GradientType=0);
     background-color: black;
-
 
     /*border-top: 1px solid white;*/
     /*border-right: 1px solid palegoldenrod;*/
@@ -258,4 +250,24 @@ footer a, footer p {
     display: inline-block;
     vertical-align: middle;
     float: none;
+}
+
+.mast_pika {
+    margin: 3% 0 0 -49%;
+    position: absolute;
+}
+
+.mast_krest {
+    margin: 2% 0 0 45%;
+    position: absolute;
+}
+
+.mast_buben {
+    margin: 58% 0 0 35%;
+    position: absolute;
+}
+
+.mast_cherv {
+    margin: 46% 0 0 -49%;
+    position: absolute;
 }
