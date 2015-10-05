@@ -1,22 +1,12 @@
 body{
-    background-color: palegoldenrod;
-    /*background-image: url("../images/bg1.jpg"), url('../images/bg2.jpg');*/
-
-    /*background-image: url('../images/bg10.png'),url('../images/bg_gold.png');*/
-    /*background-image: url('../images/bg17.jpg');*/
-
-    /*background-image: url('../images/bg35.jpg');*/
-    /*background-position: right bottom, left top;*/
-
     background:#f9bf00 url(../images/bg_rays_2.png) no-repeat center top scroll;
     background-size: 100% auto;
     /*padding-bottom: 50%;*/
 
-
     /*background: -webkit-radial-gradient(top,white);*/
     /*background: url(../images/bg_rays_2.png) no-repeat center top , radial-gradient(at top,ghostwhite,gold,orange);*/
-
 }
+
 
 .footer {
     background-color:black;
@@ -102,7 +92,7 @@ ul.nav-pills {
     padding: 10px 20px 6px 20px;
     min-height: 280px;
     ~min-width: 150px;
-    color: #FFF;
+    color: floralwhite;
 }
 
 .ribbon1 img,.ribbon img{
@@ -143,7 +133,7 @@ ul.nav-pills {
 }
 
 .ribbon1 span, .ribbon span {
-    color: #FFF;
+    color: floralwhite;
     font-size: 1.3em;
     /*font-family: "Shadows Into Light", cursive;*/
 }
@@ -160,7 +150,7 @@ ul.nav-pills {
 .bg-black {
     background: black;
     min-height: 100px;
-    color: whitesmoke;
+    color: floralwhite;
 }
 
 .ribbon-menu img {
@@ -194,6 +184,11 @@ ul.footer-nav-menu {
 footer .bg-black {
     min-height:278px;
 }
+
+footer h3, footer h4 {
+    color: floralwhite;
+}
+
 
 footer a, footer p {
     color:gray;
