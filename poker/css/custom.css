@@ -12,9 +12,6 @@ body{
     background-color:black;
 }
 
-.nav {
-    background-color:#e60f00;
-}
 
 ul.nav-pills {
     margin:0;
@@ -34,7 +31,7 @@ ul.nav-pills {
 .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus,
 .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
     color: #fff;
-    background-color: orangered;
+    background-color: #d61920;
     height: 50px;
 }
 
@@ -56,14 +53,13 @@ ul.nav-pills {
 }
 
 
-
 .nav {
-    background-color: #e60f00;
+    background-color: #d61920;
 }
 
 .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
     color: #fff;
-    background-color: orangered;
+    background-color: #d61920;
 }
 
 .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
