@@ -200,7 +200,30 @@ footer a, footer p {
     padding-bottom:10px;
 }
 
-.navbar-default {
+.nav-pills {
+    background-image: -webkit-linear-gradient(top, #d51909 0%, #8c0c00 100%);
+    background-image: -o-linear-gradient(top, #d51909 0%, #8c0c00 100%);
+    background-image: linear-gradient(to bottom, #d51909 0%, #8c0c00 100%);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffd51909', endColorstr='#ff8c0c00', GradientType=0);
+    background-color: black;
+
+    /*border-top: 1px solid white;*/
+    /*border-right: 1px solid palegoldenrod;*/
+    /*border-bottom: 1px solid blue;*/
+    /*border-left: 1px solid green;*/
+}
+
+.nav-pills-red {
+    background-image: -webkit-linear-gradient(top, #990000 0%, #770000 100%);
+    background-image: -o-linear-gradient(top, #990000 0%, #770000 100%);
+    background-image: linear-gradient(to bottom, #990000 0%, #770000 100%);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff990000', endColorstr='#ff770000', GradientType=0);
+    background-color: black;
+}
+
+.nav-pills-green {
     background-image: -webkit-linear-gradient(top, #004400 0%, #009900 100%);
     background-image: -o-linear-gradient(top, #004400 0%, #009900 100%);
     background-image: linear-gradient(to bottom, #004400 0%, #009900 100%);
