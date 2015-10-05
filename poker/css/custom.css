@@ -252,6 +252,7 @@ footer a, footer p {
     float: none;
 }
 
+/*start masti*/
 .mast_pika {
     margin: 3% 0 0 -39%;
     position: absolute;
@@ -271,3 +272,4 @@ footer a, footer p {
     margin: 46% 0 0 -43%;
     position: absolute;
 }
+/* end masti*/

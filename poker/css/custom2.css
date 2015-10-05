@@ -1,8 +1,11 @@
 body{
-    /*background-image: url(../images/bg41.png);*/
+    background-image: url(../images/bg41.png);
     background-color: #f9bf00;
 }
 
+.content {
+    background-color:#f9bf00;
+}
 
 .footer {
     background-color:black;
@@ -261,3 +264,25 @@ footer a, footer p {
     vertical-align: middle;
     float: none;
 }
+
+/*start masti*/
+.mast_pika {
+    margin: 3% 0 0 -39%;
+    position: absolute;
+}
+
+.mast_krest {
+    margin: 2% 0 0 33%;
+    position: absolute;
+}
+
+.mast_buben {
+    margin: 63% 0 0 35%;
+    position: absolute;
+}
+
+.mast_cherv {
+    margin: 46% 0 0 -43%;
+    position: absolute;
+}
+/* end masti*/
