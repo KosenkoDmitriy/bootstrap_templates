@@ -57,7 +57,7 @@ ul.nav-pills {
 
 .navbar-header, .navbar, .navbar-default {
     /*background: inherit;*/
-    background-color: darkred;
+    background-color: #aa0915;
     border:0px;
 }
 
@@ -78,12 +78,12 @@ ul.nav-pills {
 
 .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
     color: #fff;
-    background-color: darkred;
+    background-color: #aa0915;
 }
 
 .nav-pills > li > a:hover, .nav-pills > li > a:focus {
     color: #fff;
-    background-color: darkred;
+    background-color: #aa0915;
 }
 
 .nav a {
@@ -153,7 +153,7 @@ ul.nav-pills {
 }
 
 .bg-red {
-    background: darkred;
+    background: #aa0915;
     min-height: 100px;
 }
 
@@ -180,6 +180,9 @@ ul.nav-pills {
 .dark {
     color: palegoldenrod;
     background-color: black;
+    margin:15px;
+    padding: 5px;
+    font-size: 1.2em;
 }
 
 ul.footer-nav-menu {
