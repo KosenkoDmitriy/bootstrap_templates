@@ -182,7 +182,6 @@ ul.nav-pills {
 .dark {
     color: palegoldenrod;
     background-color: black;
-    margin: 15px;
     padding: 5px;
     font-size: 1.2em;
 }
@@ -273,3 +272,8 @@ footer a, footer p {
     position: absolute;
 }
 /* end masti*/
+
+.content img {
+    padding-right:0px;
+    padding-left:0px;
+}
