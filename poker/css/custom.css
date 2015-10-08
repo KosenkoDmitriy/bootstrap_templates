@@ -141,7 +141,7 @@ ul.nav-pills {
     background-image: url("./images/bg_gold.png");
 }
 
-.bg-red {
+.bg-red, .bg-red2 {
     min-height: 100px;
     background-image: -webkit-linear-gradient(top, #F00000 0%, #580000 100%);
     /*background-image: -webkit-linear-gradient(top, #F51909 0%, #8c0c00 100%);*/
@@ -276,4 +276,22 @@ footer a, footer p {
 .content img {
     padding-right:0px;
     padding-left:0px;
+}
+
+.bg-transparent {
+    background: none;
+}
+
+.bg-red2 {
+    min-height: auto;
+    color:palegoldenrod !important;
+}
+.form-control {
+    background: none;
+    /*margin-left: 2%;*/
+    /*width:96%;*/
+}
+
+.tab-content {
+    padding:20px;
 }
