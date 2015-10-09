@@ -150,19 +150,24 @@ ul.nav-pills {
     background: radial-gradient(at top, #414141, black);
 }
 
+.ribbon-menu {
+    position: relative;
+}
+
 .ribbon-menu img {
-    position: absolute;
     height: 125px;
     margin-top: -9%;
 }
 
 .ribbon-menu img.right {
+    position:absolute;
     margin-left: 50%;
-
+    /*margin-top: -9.5%;*/
 }
 
 .ribbon-menu img.left {
-    margin-left: -78%;
+    position:absolute;
+    margin-left: -542px;
 }
 
 .dark {
@@ -233,24 +238,39 @@ footer a, footer p {
 }
 
 /*start masti*/
+.mast{
+    position: relative;
+    max-width: 700px;
+    min-width: 240px;
+    z-index: -100;
+}
+
 .mast_pika {
-    margin: 38px 0 0 -538px;
+    left:-25%;
+    top:40px;
     position: absolute;
 }
 
 .mast_krest {
-    margin: 38px 0 0 330px;
     position: absolute;
+    right:-20%;
+    top:30px;
 }
 
 .mast_buben {
-    margin: 800px 0 0 350px;
     position: absolute;
+    right:0px;
+    top:100px;
 }
 
 .mast_cherv {
-    margin: 700px 0 0 -480px;
     position: absolute;
+    /*left:-15%;*/
+    /*top:480px;*/
+
+    top:220px;
+    left:-12%;
+    z-index: 90 !important;
 }
 /* end masti*/
 
@@ -307,18 +327,16 @@ footer a, footer p {
     color:#888;
 }
 
-/* start back to top */
-
-#top-link-block.affix-top {
-    position: absolute; /* allows it to "slide" up into view */
-    bottom: -82px; /* negative of the offset - height of link element */
-    right: 1%; /* padding from the left side of the window */
-}
 
 #top-link-block.affix {
+
     position: fixed; /* keeps it on the bottom once in view */
-    bottom: 18px; /* height of link element */
+    /*max-width: 700px;*/
+    /*min-width: 240px;*/
+
+    bottom: 1%; /* height of link element */
     right: 1%; /* padding from the left side of the window */
+
 }
 
 .btn-top {

@@ -40,17 +40,23 @@
 
 <div class="text-center">
     <div class="container container-narrow">
-
-        <img src="./images/mast/krest.png" class="mast_krest">
-        <img src="./images/mast/pika.png" class="mast_pika">
-        <img src="./images/mast/cherv.png" class="mast_cherv">
-        <img src="./images/mast/buben.png" class="mast_buben">
-
+        <div class="mast">
+            <img src="./images/mast/krest.png" class="mast_krest">
+            <img src="./images/mast/pika.png" class="mast_pika">
+            <img src="./images/mast/cherv.png" class="mast_cherv">
+            <img src="./images/mast/buben.png" class="mast_buben">
+        </div>
         <div class="header">
 
             <div class="masthead  text-center">
 
+
                 <img src="./images/logo.png" class="logo" height="" align="">
+
+                <div class="ribbon-menu">
+                    <img src="./images/ribbon_red_l.png" class="left">
+                    <img src="./images/ribbon_red_r.png" class="right">
+                </div>
 
                 <nav class="navbar navbar-default">
                     <div class="">
@@ -72,12 +78,8 @@
                         <!-- Collect the nav links, forms, and other content for toggling -->
                         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                             <ul class="nav nav-pills nav-justified">
-                                <div class="ribbon-menu">
-                                    <img src="./images/ribbon_red_r.png" class="right">
-                                    <img src="./images/ribbon_red_l.png" class="left">
-                                </div>
-
                                 <li class="active"><a href="#home">Home</a></li>
+
                                 <li><a href="#games">Games</a></li>
                                 <li><a href="#credits">Credits</a></li>
                                 <!--<li><a href="#downloads">Downloads</a></li>-->
@@ -403,19 +405,17 @@
 
 </footer>
 
-<div class="container container-narrow">
-<div class="row">
-<div class="col-xs-12">
-
-    <div id="top-link-block" class="hidden">
-        <a href="#top" class="btn-top" onclick="$('html,body').animate({scrollTop:0},'slow');return false;">
-            <i class="glyphicon glyphicon-chevron-up"></i> Go to Top
-        </a>
+<div class="top">
+    <div class="row">
+        <div class="col-xs-12">
+            <div id="top-link-block" class="hidden">
+                <a href="#top" class="btn-top" onclick="$('html,body').animate({scrollTop:0},'slow');return false;">
+                    <i class="glyphicon glyphicon-chevron-up"></i> Go to Top
+                </a>
+            </div>
+            <!-- /top-link-block -->
+        </div>
     </div>
-    <!-- /top-link-block -->
-</div>
-</div>
-
 </div>
 
 <!-- Bootstrap core JavaScript
@@ -442,6 +442,13 @@
                 offset: {top: 100}
             });
         }
+
+
+//        var h = $(".container-narrow").height();
+//        h=$(".mast_buben").position().left;
+
+        absPosLeft=$(".container-narrow").offset().left ;
+        $("#top-link-block.affix").css("right", absPosLeft);
     });
 </script>
 
