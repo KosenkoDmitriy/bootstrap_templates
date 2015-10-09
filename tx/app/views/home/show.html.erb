@@ -1,15 +1,9 @@
 <div class="container container-narrow content">
   <div class="row" id="home">
-    <div class="col-xs-12 col-sm-9 col-md-9 text-center">
-      <h2 class="text-center dark">Start the best gaming experience</h2>
+    <div class="col-xs-12">
+      <!--<h2 class="text-center dark">Start the best gaming experience</h2>-->
 
-      <a href="<%= game_play_url %>">
-        <%= image_tag "games/texas_holdem.jpeg", class: "img-responsive col-xs-12" %>
-      </a>
-
-      <a href="<%= game_play_url %>">
-        <%= image_tag "button_red.png", class: "img-responsive col-xs-12" %>
-      </a>
+      <%= image_tag "games/texas_holdem.jpeg", class: "img-responsive col-xs-12" %>
 
       <p><b>Texas hold 'em (also known as Texas holdem, hold 'em, or holdem) </b> is a variation of the standard
         card game of poker. Two cards (hole cards) are dealt face down to each player and then five community
@@ -20,17 +14,16 @@
         "on the flop", "on the turn", and "on the river". </p>
       <br/>
     </div>
-    <div class="col-xs-12 col-sm-3 col-md-3">
-      <%= render partial: "shared/banners" %>
-    </div>
   </div>
   <!-- /.row -->
 
-  <%= render partial: "shared/back_to_top" %>
-  <%= render partial: "shared/games" %>
-  <%= render partial: "shared/credits" %>
-  <%= render partial: "shared/sign_up_in" %>
+  <div class="top">
+    <div id="top-link-block" class="hidden">
+      <a href="#top" class="btn-top" onclick="$('html,body').animate({scrollTop:0},'slow');return false;">
+        <i class="glyphicon glyphicon-chevron-up"></i> Go to Top
+      </a>
+    </div>
+    <!-- /top-link-block -->
+  </div>
 
 </div>
-
-<!-- /.container -->
