@@ -314,3 +314,33 @@ footer a, footer p {
 .control-label {
     color:#888;
 }
+
+/* start back to top */
+
+#top-link-block.affix-top {
+    position: absolute; /* allows it to "slide" up into view */
+    bottom: -82px; /* negative of the offset - height of link element */
+    right: 100px; /* padding from the left side of the window */
+
+}
+
+#top-link-block.affix {
+
+    position: fixed; /* keeps it on the bottom once in view */
+    bottom: 18px; /* height of link element */
+    right: 100px; /* padding from the left side of the window */
+}
+
+.btn-top {
+    padding: 10px;
+    border-radius: 15px;
+    background-color: green;
+    color: yellowgreen;
+}
+
+.btn-top:hover {
+    color: lightgoldenrodyellow;
+    text-decoration: none;
+}
+
+/* end back to top */

@@ -36,8 +36,7 @@
 </head>
 
 
-<body>
-
+<body id="body">
 
 <div class="text-center">
     <div class="container container-narrow">
@@ -105,8 +104,13 @@
             <img src="./images/button_red.png" class="img-responsive col-xs-12"/>
             <!--<img src="./images/button_red.png" class="img-responsive col-xs-12" width="">-->
 
-            <p><b>Play now Play now </b>Play now Play now Play now Play now Play now Play now Play now Play now Play now
-                Play now Play now Play now Play now Play now </p>
+            <p><b>Texas hold 'em (also known as Texas holdem, hold 'em, or holdem) </b> is a variation of the standard
+                card game of poker. Two cards (hole cards) are dealt face down to each player and then five community
+                cards are placed face-up by the dealer—a series of three ("the flop") then an additional single card
+                ("the turn" or "fourth street") and another additional card ("the river" or "fifth street"). The best
+                five card poker hand is obtained by taking cards from either the community or their hole cards. Players
+                have the option to check, bet, raise or fold after each deal; i.e., betting may occur prior to the flop,
+                "on the flop", "on the turn", and "on the river". </p>
             <br/>
         </div>
         <div class="col-xs-12 col-sm-3 col-md-3">
@@ -159,21 +163,21 @@
     <!--<h4 class="text-center dark">Downloads</h4>-->
 
     <!--<div class="row" id="downloads" class="">-->
-        <!--&lt;!&ndash;<div class="col-xs-12">&ndash;&gt;-->
-        <!--&lt;!&ndash;<img src="./images/downloads/pc_mac_ios_android.png" class="col-xs-12">&ndash;&gt;-->
-        <!--&lt;!&ndash;</div>&ndash;&gt;-->
-        <!--<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">-->
-            <!--<img src="./images/downloads/circle_android.png" class="img-responsive col-xs-12">-->
-        <!--</div>-->
-        <!--<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">-->
-            <!--<img src="./images/downloads/circle_ios.png" class="img-responsive col-xs-12">-->
-        <!--</div>-->
-        <!--<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">-->
-            <!--<img src="./images/downloads/circle_windows.png" class="img-responsive col-xs-12">-->
-        <!--</div>-->
-        <!--<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">-->
-            <!--<img src="./images/downloads/circle_mac.png" class="img-responsive col-xs-12">-->
-        <!--</div>-->
+    <!--&lt;!&ndash;<div class="col-xs-12">&ndash;&gt;-->
+    <!--&lt;!&ndash;<img src="./images/downloads/pc_mac_ios_android.png" class="col-xs-12">&ndash;&gt;-->
+    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+    <!--<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">-->
+    <!--<img src="./images/downloads/circle_android.png" class="img-responsive col-xs-12">-->
+    <!--</div>-->
+    <!--<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">-->
+    <!--<img src="./images/downloads/circle_ios.png" class="img-responsive col-xs-12">-->
+    <!--</div>-->
+    <!--<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">-->
+    <!--<img src="./images/downloads/circle_windows.png" class="img-responsive col-xs-12">-->
+    <!--</div>-->
+    <!--<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">-->
+    <!--<img src="./images/downloads/circle_mac.png" class="img-responsive col-xs-12">-->
+    <!--</div>-->
     <!--</div>-->
 
     <div class="bg-black">
@@ -258,7 +262,7 @@
                     <div role="tabpanel" class="tab-pane active" id="sign_in">
                         <!--Sign In-->
 
-                        <h2><i class="glyphicon glyphicon-log-in"></i> Login</h2>
+                        <h2 class="text-center"><i class="glyphicon glyphicon-log-in"></i> Login</h2>
 
                         <form method="post" accept-charset="utf-8" autocomplete="off" role="form"
                               class="form-horizontal">
@@ -291,7 +295,7 @@
                     <div role="tabpanel" class="tab-pane" id="sign_up">
                         <!--Sign Up-->
 
-                        <h2><i class="glyphicon glyphicon-log-in"></i> Register</h2>
+                        <h2 class="text-center"><i class="glyphicon glyphicon-log-in"></i> Register</h2>
 
                         <form method="post" accept-charset="utf-8" autocomplete="off" role="form"
                               class="form-horizontal">
@@ -336,9 +340,10 @@
     </div>
     <script type="javascript">
         $('#myTabs a').click(function (e) {
-            e.preventDefault()
-            $(this).tab('show')
+            e.preventDefault();
+            $(this).tab('show');
         });
+
         //
         //        $('#myTabs a[href="#profile"]').tab('show') // Select tab by name
         //        $('#myTabs a:first').tab('show') // Select first tab
@@ -394,6 +399,13 @@
     </div>
 </footer>
 
+
+<span id="top-link-block" class="hidden">
+    <a href="#top" class="btn-top" onclick="$('html,body').animate({scrollTop:0},'slow');return false;">
+        <i class="glyphicon glyphicon-chevron-up"></i> Back to Top
+    </a>
+</span><!-- /top-link-block -->
+
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
@@ -402,6 +414,24 @@
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 <script src="./js/ie10-viewport-bug-workaround.js"></script>
 
+
+<script>
+    //    $(document).ready(function () {alert("ready") });
+    //    $(document).load(function () {alert("load"); });
+
+    //    back to top
+    // Only enable if the document has a long scroll bar
+    // Note the window height + offset
+
+    $(function () {
+        if (($(window).height() + 100) < $(document).height()) {
+            $('#top-link-block').removeClass('hidden').affix({
+                // how far to scroll down before link "slides" into view
+                offset: {top: 100}
+            });
+        }
+    });
+</script>
 
 </body>
 </html>
