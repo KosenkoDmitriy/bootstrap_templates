@@ -327,16 +327,11 @@ footer a, footer p {
     color:#888;
 }
 
-
 #top-link-block.affix {
-
     position: fixed; /* keeps it on the bottom once in view */
-    /*max-width: 700px;*/
-    /*min-width: 240px;*/
-
     bottom: 1%; /* height of link element */
     right: 25%; /* padding from the left side of the window */
-
+    z-index: 1000;
 }
 
 .btn-top {
@@ -352,3 +347,31 @@ footer a, footer p {
 }
 
 /* end back to top */
+
+
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+    .container-narrow {
+        max-width: 400px;
+    }
+}
