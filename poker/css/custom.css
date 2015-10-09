@@ -348,6 +348,11 @@ footer a, footer p {
 
 /* end back to top */
 
+#games {
+    min-height:240px;
+    max-height:600px;
+    overflow-y: scroll;
+}
 
 /* Large desktops and laptops */
 @media (min-width: 1200px) {
