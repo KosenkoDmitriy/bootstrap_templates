@@ -41,6 +41,7 @@ ul.nav-pills {
 }
 
 .container-narrow {
+    min-width: 320px;
     max-width: 730px;
 }
 
@@ -157,6 +158,7 @@ ul.nav-pills {
 
 .ribbon-menu img.right {
     margin-left: 50%;
+
 }
 
 .ribbon-menu img.left {
@@ -232,22 +234,22 @@ footer a, footer p {
 
 /*start masti*/
 .mast_pika {
-    margin: 3% 0 0 -39%;
+    margin: 38px 0 0 -538px;
     position: absolute;
 }
 
 .mast_krest {
-    margin: 2% 0 0 33%;
+    margin: 38px 0 0 330px;
     position: absolute;
 }
 
 .mast_buben {
-    margin: 63% 0 0 35%;
+    margin: 800px 0 0 350px;
     position: absolute;
 }
 
 .mast_cherv {
-    margin: 46% 0 0 -43%;
+    margin: 700px 0 0 -480px;
     position: absolute;
 }
 /* end masti*/
