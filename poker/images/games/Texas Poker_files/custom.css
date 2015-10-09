@@ -1,29 +1,25 @@
-body{
-    background-image: url(../images/bg/bg35.jpg);
-    background-color: #f9bf00;
-}
-
-.content {
-    background-color:#f9bf00;
+body {
+    background: #f9bf00 url(../images/bg_rays_2.png) no-repeat center top scroll;
+    background-size: 100% auto;
+    /*padding-bottom: 50%;*/
 }
 
 .footer {
-    background-color:black;
+    background-color: black;
 }
 
-
 ul.nav-pills {
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
 }
 
 .navbar-collapse {
     padding: 0;
-    margin:0;
+    margin: 0;
 }
 
 .navbar-brand {
-    padding:0;
+    padding: 0;
 }
 
 .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus,
@@ -34,30 +30,20 @@ ul.nav-pills {
     height: 50px;
 }
 
-
 .nav a {
     color: papayawhip;
     text-decoration: none;
 }
 
-
 .navbar-header, .navbar, .navbar-default {
     /*background: inherit;*/
     background-color: #aa0915;
-    border:0px;
-
+    border: 0px;
 }
 
 .container-narrow {
     max-width: 730px;
 }
-
-.header{
-    background: url(../images/bg/bg_rays_2.png) no-repeat center top scroll;
-    background-size: 100% auto;
-    /*padding-bottom: 50%;*/
-}
-
 
 .nav {
     background-color: #d61920;
@@ -93,10 +79,10 @@ ul.nav-pills {
     margin: 0px 0px 0 0px;
     padding: 10px 20px 6px 20px;
     min-height: 280px;
-    ~min-width: 150px;
+~ min-width : 150 px;
     color: floralwhite;
 
-    background-image: -webkit-linear-gradient(top, #00D000 0%, #005800  100%);
+    background-image: -webkit-linear-gradient(top, #00D000 0%, #005800 100%);
     background-image: -o-linear-gradient(top, #00D000 0%, #005800 100%);
     background-image: linear-gradient(to bottom, #00D000 0%, #005800 100%);
     background-repeat: repeat-x;
@@ -104,16 +90,16 @@ ul.nav-pills {
     background-color: #379500;
 }
 
-.ribbon1 img,.ribbon img{
+.ribbon1 img, .ribbon img {
     margin-top: -35px;
-    ~min-width: 150px;
-	width: 150px;
-    ~min-height: 180px;
+~ min-width : 150 px;
+    width: 150px;
+~ min-height : 180 px;
 }
 
- .ribbon img{
-	margin-top: 0px;
- }
+.ribbon img {
+    margin-top: 0px;
+}
 
 .container.with-ribbon {
     padding-top: 50px;
@@ -126,7 +112,7 @@ ul.nav-pills {
     min-height: 100px;
     min-width: 190px;
 
-    background-image: -webkit-linear-gradient(top, #00D000 0%, #005800  100%);
+    background-image: -webkit-linear-gradient(top, #00D000 0%, #005800 100%);
     background-image: -o-linear-gradient(top, #00D000 0%, #005800 100%);
     background-image: linear-gradient(to bottom, #00D000 0%, #005800 100%);
     background-repeat: repeat-x;
@@ -155,7 +141,7 @@ ul.nav-pills {
     background-image: url("./images/bg_gold.png");
 }
 
-.bg-red {
+.bg-red, .bg-red2 {
     min-height: 100px;
     background-image: -webkit-linear-gradient(top, #F00000 0%, #580000 100%);
     /*background-image: -webkit-linear-gradient(top, #F51909 0%, #8c0c00 100%);*/
@@ -170,9 +156,13 @@ ul.nav-pills {
 .bg-black {
     min-height: 100px;
     color: floralwhite;
-    background: -webkit-radial-gradient(at top, #400000, #004000, black);
     /*background: url(../images/bg_rays_2.png) no-repeat center top , radial-gradient(at top,ghostwhite,gold,orange);*/
-    background: radial-gradient(at top, #004000, #400000,black);
+
+    /*background: -webkit-radial-gradient(at top, #400000, #004000, black);*/
+    /*background: radial-gradient(at top, #004000, #400000,black);*/
+
+    background: -webkit-radial-gradient(at top, #414141, black);
+    background: radial-gradient(at top, #414141, black);
 }
 
 .ribbon-menu img {
@@ -192,7 +182,6 @@ ul.nav-pills {
 .dark {
     color: palegoldenrod;
     background-color: black;
-    margin:15px;
     padding: 5px;
     font-size: 1.2em;
 }
@@ -202,28 +191,26 @@ ul.footer-nav-menu {
     list-style-type: none;
 }
 
-
 footer .bg-black {
-    min-height:278px;
+    min-height: 278px;
 }
 
 footer h3, footer h4 {
     color: floralwhite;
 }
 
-
 footer a, footer p {
-    color:gray;
+    color: gray;
 }
 
 .logo {
-	height:auto;
-	width:50%;
+    height: auto;
+    width: 50%;
 }
 
 .img-responsive {
-    padding-top:10px;
-    padding-bottom:10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .nav-pills {
@@ -242,7 +229,6 @@ footer a, footer p {
     background-repeat: repeat-x;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff990000', endColorstr='#ff770000', GradientType=0);
     background-color: black;
-
 
     /*border-top: 1px solid white;*/
     /*border-right: 1px solid palegoldenrod;*/
@@ -286,3 +272,42 @@ footer a, footer p {
     position: absolute;
 }
 /* end masti*/
+
+.content img {
+    padding-right:0px;
+    padding-left:0px;
+}
+
+.bg-transparent {
+    background: none;
+}
+
+.bg-red2 {
+    min-height: auto;
+    height: auto;
+    color:palegoldenrod !important;
+}
+.form-control {
+    background: none;
+    color:floralwhite;
+}
+
+.tab-content {
+    padding:20px;
+}
+
+.btn-green {
+    /*background-image: -webkit-linear-gradient(top, #004400 0%, #009900 100%);*/
+    /*background-image: -o-linear-gradient(top, #004400 0%, #009900 100%);*/
+    /*background-image: linear-gradient(to bottom, #004400 0%, #009900 100%);*/
+    /*background-repeat: repeat-x;*/
+    /*filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff004400', endColorstr='#ff009900', GradientType=0);*/
+    /*background-color: black;*/
+
+    background-image: -webkit-linear-gradient(top, #00D000 0%, #005800 100%);
+    background-image: -o-linear-gradient(top, #00D000 0%, #005800 100%);
+    background-image: linear-gradient(to bottom, #00D000 0%, #005800 100%);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff00D000', endColorstr='#ff005800', GradientType=0);
+    background-color: #008800;
+}
