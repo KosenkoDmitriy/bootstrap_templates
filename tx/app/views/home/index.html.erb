@@ -1,0 +1,354 @@
+<div class="text-center">
+  <div class="container container-narrow">
+    <div class="mast">
+      <%= image_tag "mast/krest.png", class: "mast_krest" %>
+      <%= image_tag "mast/pika.png", class: "mast_pika" %>
+      <%= image_tag "mast/cherv.png", class: "mast_cherv" %>
+      <%= image_tag "mast/buben.png", class: "mast_buben" %>
+    </div>
+    <div class="header">
+
+      <div class="masthead  text-center">
+        <%= image_tag "logo.png", class: "logo" %>
+
+        <div class="ribbon-menu">
+          <%= image_tag "ribbon_red_l.png", class: "left" %>
+          <%= image_tag "ribbon_red_r.png", class: "right" %>
+        </div>
+
+        <nav class="navbar navbar-default">
+          <div class="">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                      data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="http://html.shopomob.ru/poker/#">
+                <!--Texas Holdem-->
+                <!--<img src="./images/logo.png" class="img-responsive" class="img-responsive" width="60px" align="">-->
+              </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav nav-pills nav-justified">
+                <li class="active"><a href="#home">Home</a></li>
+                <li><a href="#games">Games</a></li>
+                <li><a href="#credits">Credits</a></li>
+                <li><a href="#sign_in_up">Sign Up</a></li>
+                <li><a href="#sign_in_up">Sign In</a></li>
+
+              </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+          </div>
+          <!-- /.container-fluid -->
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container container-narrow content">
+  <div class="row" id="home">
+    <div class="col-xs-12 col-sm-9 col-md-9 text-center">
+      <h2 class="text-center dark">Start the best gaming experience</h2>
+
+      <%= image_tag "games/texas_holdem.jpeg", class: "img-responsive col-xs-12" %>
+      <%= image_tag "button_red.png", class: "img-responsive col-xs-12" %>
+
+      <p><b>Texas hold 'em (also known as Texas holdem, hold 'em, or holdem) </b> is a variation of the standard
+        card game of poker. Two cards (hole cards) are dealt face down to each player and then five community
+        cards are placed face-up by the dealer—a series of three ("the flop") then an additional single card
+        ("the turn" or "fourth street") and another additional card ("the river" or "fifth street"). The best
+        five card poker hand is obtained by taking cards from either the community or their hole cards. Players
+        have the option to check, bet, raise or fold after each deal; i.e., betting may occur prior to the flop,
+        "on the flop", "on the turn", and "on the river". </p>
+      <br/>
+    </div>
+    <div class="col-xs-12 col-sm-3 col-md-3">
+      <%= image_tag "banners/banner_live_casino.png", class: "img-responsive col-xs-12" %>
+      <%= image_tag "banners/banner_popular_games.png", class: "img-responsive col-xs-12" %>
+    </div>
+  </div>
+  <!-- /.row -->
+
+  <div class="top">
+    <div id="top-link-block" class="hidden">
+      <a href="#top" class="btn-top" onclick="$('html,body').animate({scrollTop:0},'slow');return false;">
+        <i class="glyphicon glyphicon-chevron-up"></i> Go to Top
+      </a>
+    </div>
+    <!-- /top-link-block -->
+  </div>
+
+  <h4 class="text-center dark">Games</h4>
+
+  <div class="row" id="games" class="">
+    <div class="col-xs-12 col-sm-6">
+      <%= image_tag "games/texas_holdem.jpeg", class: "img-responsive col-xs-12" %>
+    </div>
+    <div class="col-xs-12 col-sm-6">
+      <%= image_tag "games/caribbean_poker.jpeg", class: "img-responsive col-xs-12" %>
+    </div>
+    <div class="col-xs-12 col-sm-6">
+      <%= image_tag "games/black_jack.jpeg", class: "img-responsive col-xs-12" %>
+    </div>
+    <div class="col-xs-12 col-sm-6">
+      <%= image_tag "games/european_roulette.jpeg", class: "img-responsive col-xs-12" %>
+    </div>
+    <div class="col-xs-12 col-sm-6">
+      <%= image_tag "games/texas_holdem.jpeg", class: "img-responsive col-xs-12" %>
+    </div>
+
+    <div class="col-xs-12 col-sm-6">
+      <%= image_tag "games/safari_sam_slots.jpeg", class: "img-responsive col-xs-12" %>
+    </div>
+    <div class="col-xs-12 col-sm-6">
+      <%= image_tag "games/bingo_bash.jpeg", class: "img-responsive col-xs-12" %>
+    </div>
+    <div class="col-xs-12 col-sm-6">
+      <%= image_tag "games/wild_savanna_slots.jpeg", class: "img-responsive col-xs-12" %>
+    </div>
+    <div class="col-xs-12 col-sm-6">
+      <%= image_tag "games/cha_chingo.jpeg", class: "img-responsive col-xs-12" %>
+    </div>
+    <div class="col-xs-12 col-sm-6">
+      <%= image_tag "games/classic_777_slots.jpeg", class: "img-responsive col-xs-12" %>
+    </div>
+  </div>
+  <br>
+
+  <!--<h4 class="text-center dark">Downloads</h4>-->
+
+  <!--<div class="row" id="downloads" class="">-->
+  <!--&lt;!&ndash;<div class="col-xs-12">&ndash;&gt;-->
+  <!--&lt;!&ndash;<img src="./images/downloads/pc_mac_ios_android.png" class="col-xs-12">&ndash;&gt;-->
+  <!--&lt;!&ndash;</div>&ndash;&gt;-->
+  <!--<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">-->
+  <!--<img src="./images/downloads/circle_android.png" class="img-responsive col-xs-12">-->
+  <!--</div>-->
+  <!--<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">-->
+  <!--<img src="./images/downloads/circle_ios.png" class="img-responsive col-xs-12">-->
+  <!--</div>-->
+  <!--<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">-->
+  <!--<img src="./images/downloads/circle_windows.png" class="img-responsive col-xs-12">-->
+  <!--</div>-->
+  <!--<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">-->
+  <!--<img src="./images/downloads/circle_mac.png" class="img-responsive col-xs-12">-->
+  <!--</div>-->
+  <!--</div>-->
+
+  <div class="bg-black">
+    <!--<h4 class="text-center dark">Credits</h4>-->
+
+    <div class="row" id="credits" class="">
+      <div class="col-xs-12">
+        <div class="panel panel-default bg-transparent">
+          <!-- Default panel contents -->
+          <div class="panel-heading text-center bg-red2">Credits</div>
+          <!--<div class="panel-body">-->
+          <!--<p>Buy Credits</p>-->
+          <!--</div>-->
+
+          <!-- Table -->
+          <table class="table text-center">
+            <thead>
+            <tr>
+              <!--<th class="text-center">free</th>-->
+              <th class="text-center">base</th>
+              <!--<th class="text-center">standart</th>-->
+              <th class="text-center">pro</th>
+              <th class="text-center">premium</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <!--<td>100 credits</td>-->
+              <td>1 000 credits</td>
+              <td>10 000 credits</td>
+              <td>100 000 credits</td>
+            </tr>
+            <tr>
+              <!--<td>$ 10</td>-->
+              <td>$ 100</td>
+              <td>$ 1 000</td>
+              <td>$ 10 000</td>
+            </tr>
+            <tr>
+              <!--<td>-->
+              <!--<button class="btn btn-success btn-group-justified">get</button>-->
+              <!--</td>-->
+              <td>
+                <button class="btn btn-green btn-group-justified">buy</button>
+              </td>
+              <td>
+                <button class="btn btn-green btn-group-justified">buy</button>
+              </td>
+              <td>
+                <button class="btn btn-green btn-group-justified">buy</button>
+              </td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br/>
+
+  <div class="bg-black">
+    <!--<h4 class="text-center dark" id="sign_in_up">Sign In / Sign Up</h4>-->
+    <div class="row" id="sign_in_up">
+      <div class="col-xs-12">
+        <!-- Nav tabs -->
+        <ul class="nav nav-pills nav-justified" role="tablist">
+          <li role="presentation" class="active">
+            <a href="#sign_in" aria-controls="home" role="tab" data-toggle="tab">
+              Sign In
+            </a>
+          </li>
+          <li role="presentation"><a href="#sign_up" aria-controls="profile" role="tab" data-toggle="tab">
+            Sign Up
+          </a>
+          </li>
+        </ul>
+        <!-- Tab panes -->
+        <div class="tab-content" id="">
+          <div role="tabpanel" class="tab-pane active" id="sign_in">
+            <!--Sign In-->
+
+            <h2 class="text-center"><i class="glyphicon glyphicon-log-in"></i> Login</h2>
+
+            <form method="post" accept-charset="utf-8" autocomplete="off" role="form"
+                  class="form-horizontal">
+              <div class="form-group ">
+                <label for="login" class="sr-only">Email</label>
+                <input type="text" class="form-control" name="login" id="login_value"
+                       placeholder="Email" tabindex="1" value=""/>
+              </div>
+              <div class="form-group ">
+                <label for="password" class="sr-only">Password</label>
+                <input type="password" class="form-control" name="password" id="password"
+                       placeholder="Password" value="" tabindex="2"/>
+              </div>
+
+              <div class="checkbox">
+                <label class="control-label" for="remember_me">
+                  <input type="checkbox" name="remember_me" id="remember_me" value="1" class=""
+                         tabindex="3"/> Remember me
+                </label>
+              </div>
+              <br/>
+
+              <div class="form-group ">
+                <button type="submit" name="log-me-in" id="submit" tabindex="5"
+                        class="btn btn-lg btn-green btn-group-justified">Go
+                </button>
+              </div>
+            </form>
+          </div>
+          <div role="tabpanel" class="tab-pane" id="sign_up">
+            <!--Sign Up-->
+
+            <h2 class="text-center"><i class="glyphicon glyphicon-log-in"></i> Register</h2>
+
+            <form method="post" accept-charset="utf-8" autocomplete="off" role="form"
+                  class="form-horizontal">
+              <div class="form-group ">
+                <label for="login" class="sr-only">Full Name</label>
+                <input type="email" class="form-control" name="full_name" id="full_name"
+                       placeholder="Full Name" tabindex="1" value=""/>
+              </div>
+              <div class="form-group ">
+                <label for="login" class="sr-only">Email</label>
+                <input type="email" class="form-control" name="login" id="login_value"
+                       placeholder="Email" tabindex="1" value=""/>
+              </div>
+              <div class="form-group ">
+                <label for="login" class="sr-only">Phone Number</label>
+                <input type="text" class="form-control" name="phone" id="phone"
+                       placeholder="Phone Number" tabindex="2" value=""/>
+              </div>
+              <div class="form-group ">
+                <label for="password" class="sr-only">Password</label>
+                <input type="password" class="form-control" name="password" id="password"
+                       placeholder="Password" value="" tabindex="3"/>
+              </div>
+              <div class="form-group ">
+                <label for="password" class="sr-only">Confirm Password</label>
+                <input type="password" class="form-control" name="confirm_password" id="password"
+                       placeholder="Confirm Password" value="" tabindex="4"/>
+              </div>
+              <br/>
+
+              <div class="form-group ">
+                <button type="submit" name="log-me-in" id="submit" tabindex="5"
+                        class="btn btn-lg btn-green btn-group-justified">Go
+                </button>
+              </div>
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+ </div>
+
+<!-- /.container -->
+
+<footer>
+  <div class="bg-red">
+    <div class="container container-narrow">
+      <div class="row">
+        <div class="col-xs-3">
+          <div class="ribbon1 text-center">
+            <%= image_tag "wheel_of_fortuna.png", class: "" %>
+            <br>
+            <span>Cash, Credits <br>and <br>Free Spins!</span>
+          </div>
+          <div class="ribbon text-center">
+            <%= image_tag "logo.png", class: "" %>
+            <br>
+            <span class="">All Rights <br>Reserved 2015 </span>
+          </div>
+        </div>
+
+        <div class="col-xs-offset-1 col-xs-8">
+          <h3>Start Playing - win 100% welcome bonus</h3>
+          <ul>
+            <!--<li>Texas Holdem</li>-->
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="with-ribbon bg-black">
+    <div class="container container-narrow">
+      <div class="row">
+        <div class="col-xs-3">
+        </div>
+        <div class="col-xs-offset-1 col-xs-8 valign">
+          <p>Navigation Menu:</p>
+          <a href="http://html.shopomob.ru/poker/#">Games</a><br>
+          <a href="http://html.shopomob.ru/poker/#">Home</a><br>
+          <a href="http://html.shopomob.ru/poker/#">Credits</a><br>
+          <a href="http://html.shopomob.ru/poker/#">Downloads</a><br>
+          <a href="http://html.shopomob.ru/poker/#">About</a><br>
+          <a href="http://html.shopomob.ru/poker/#">Contact</a><br>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</footer>
+
