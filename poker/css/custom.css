@@ -36,7 +36,6 @@ ul.nav-pills {
 }
 
 .navbar-header, .navbar, .navbar-default {
-    /*background: inherit;*/
     background-color: #aa0915;
     border: 0px;
 }
@@ -74,12 +73,10 @@ ul.nav-pills {
 }
 
 .ribbon1 {
-    /*background: #379500;*/
     position: absolute;
     margin: 0px 0px 0 0px;
     padding: 10px 20px 6px 20px;
     min-height: 280px;
-~ min-width : 150 px;
     color: floralwhite;
 
     background-image: -webkit-linear-gradient(top, #00D000 0%, #005800 100%);
@@ -92,9 +89,7 @@ ul.nav-pills {
 
 .ribbon1 img, .ribbon img {
     margin-top: -35px;
-~ min-width : 150 px;
     width: 150px;
-~ min-height : 180 px;
 }
 
 .ribbon img {
@@ -150,11 +145,6 @@ ul.nav-pills {
 .bg-black {
     min-height: 100px;
     color: floralwhite;
-    /*background: url(../images/bg_rays_2.png) no-repeat center top , radial-gradient(at top,ghostwhite,gold,orange);*/
-
-    /*background: -webkit-radial-gradient(at top, #400000, #004000, black);*/
-    /*background: radial-gradient(at top, #004000, #400000,black);*/
-
     background: -webkit-radial-gradient(at top, #414141, black);
     background: radial-gradient(at top, #414141, black);
 }
@@ -162,15 +152,15 @@ ul.nav-pills {
 .ribbon-menu img {
     position: absolute;
     height: 125px;
-    margin-top: 114px;
+    margin-top: -9%;
 }
 
 .ribbon-menu img.right {
-    margin-left: 345px;
+    margin-left: 50%;
 }
 
 .ribbon-menu img.left {
-    margin-left: -540px;
+    margin-left: -78%;
 }
 
 .dark {
@@ -320,15 +310,13 @@ footer a, footer p {
 #top-link-block.affix-top {
     position: absolute; /* allows it to "slide" up into view */
     bottom: -82px; /* negative of the offset - height of link element */
-    right: 100px; /* padding from the left side of the window */
-
+    right: 1%; /* padding from the left side of the window */
 }
 
 #top-link-block.affix {
-
     position: fixed; /* keeps it on the bottom once in view */
     bottom: 18px; /* height of link element */
-    right: 100px; /* padding from the left side of the window */
+    right: 1%; /* padding from the left side of the window */
 }
 
 .btn-top {
